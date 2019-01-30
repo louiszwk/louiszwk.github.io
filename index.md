@@ -1,4 +1,39 @@
-## Welcome to GitHub Pages
+## docker 安装 mysql
+
+
+第一步，从docker中拉取MySQL镜像
+
+$ sudo docker pull mysql
+
+
+
+$ sudo docker images
+
+
+
+第二步，创建并启动一个MySQL容器
+
+$ sudo docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql
+
+
+
+查看容器运行状态：
+
+$ sudo docker ps
+
+
+
+第三步，测试连接MySQL
+
+这里我使用navicat远程连接，连接MySQL前需要防火墙开放端口或者关闭防火墙。
+
+开放端口：
+
+$ sudo firewall-cmd --add-port=3306/tcp
+
+关闭防火墙：
+
+$ sudo systemctl stop firewalld
 
 You can use the [editor on GitHub](https://github.com/louiszwk/louiszwk.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
