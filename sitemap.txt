@@ -1,2 +1,2 @@
-http://example.com/2023/05/06/hello-world/
-http://example.com/
+http://localhost:4000/2023/05/06/hello-world/
+http://localhost:4000/
